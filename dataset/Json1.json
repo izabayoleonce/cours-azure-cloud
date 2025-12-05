@@ -1,0 +1,45 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data.json",
+				"folderPath": "2025/12/05",
+				"container": "exo"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nom": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"region": {
+					"type": "string"
+				},
+				"toxicite": {
+					"type": "string"
+				},
+				"besoin_eau": {
+					"type": "string"
+				},
+				"hauteur_cm": {
+					"type": "integer"
+				}
+			}
+		}
+	}
+}
